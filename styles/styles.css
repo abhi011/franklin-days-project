@@ -17,7 +17,7 @@
   --background-color: #756b6b;
   --overlay-background-color: #fbeded;
   --highlight-background-color: #685c5c;
-  --text-color: magenta;
+  --text-color: rgb(59, 47, 59);
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
