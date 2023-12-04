@@ -26,8 +26,8 @@ const createHtml = (response) => {
 }
 
 const updateConfig = (updatedObj) => {
-    const oldConfig = document?.vipul?.block.paginationCard.config
-    document.vipul = {
+    const oldConfig = document?.abhishek?.block.paginationCard.config
+    document.abhishek = {
         block: {
             paginationCard: {
                 config: {
@@ -42,7 +42,7 @@ const updateConfig = (updatedObj) => {
 const handleClick = async (block, isNext) => {
     console.log({block})
     console.log('clicked')
-    let { offset, limit, json } = document?.vipul?.block.paginationCard.config
+    let { offset, limit, json } = document?.abhishek?.block.paginationCard.config
     offset = isNext ? offset + limit : offset - limit
     console.log({
         limit: limit,
@@ -101,7 +101,7 @@ export default async function decorate(block) {
         obj.json = row.children[1].textContent
         obj.limit = row.children[2].textContent
     })
-    document.vipul = {
+    document.abhishek = {
         block: {
             paginationCard: {
                 config: {
